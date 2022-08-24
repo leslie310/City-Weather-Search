@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/style.css" />
+
+    <title>Weather Search</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Weather Search</h1>
+      <p class="lead">Search Weather by City!</p>
+  
+    </header>
+        
+  
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+
+           
+            <h3>Search by City!</h3>
+            <form class="form-inline md-form mr-auto mb-4">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="userInput">
+                <button class="btn blue-gradient btn-rounded btn-sm my-0btn btn-outline-success btn-rounded btn-sm my-0" type="submit" id="searchButton">Search</button>
+            </form>
+
+            
+            <h3>Search History: </h3>
+            <ul></ul>
+        </div>
+    </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <h1 class="display-4" id= "cityName"></h1>
+        <p class="lead" id = "currentDate"></p>
+        <p id= "currentIcon"></p>
+        <hr class="my-4">
+        <ul id="currentStats">
+            <li id="currentTemp"></li>
+            <li id="currentWindspeed"></li>
+            <li id="currentHumidity"></li>
+            <li id="currentUVI"></li>
+        </ul>
+        <p></p>
+        <p class="lead"></p>
+    </div>
+
+    <!-- forecast 1-->
+    <div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="forecast1Date"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="forecast1Icon"></h6>
+    <ul id="forecast1Stats">
+        <li id="f1Temp"></li>
+        <li id="f1Windspeed"></li>
+        <li id="f1Humidity"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Forecast 2-->
+<div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="forecast2Date"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="forecast2Icon"></h6>
+    <ul id="forecast2Stats">
+        <li id="f2Temp"></li>
+        <li id="f2Windspeed"></li>
+        <li id="f2Humidity"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Forecast 3-->
+<div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="forecast3Date"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="forecast3Icon"></h6>
+    <ul id="forecast3Stats">
+        <li id="f3Temp"></li>
+        <li id="f3Windspeed"></li>
+        <li id="f3Humidity"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Forecast 4-->
+<div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="forecast4Date"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="forecast4Icon"></h6>
+    <ul id="forecast4Stats">
+        <li id="f4Temp"></li>
+        <li id="f4Windspeed"></li>
+        <li id="f4Humidity"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Forecast 5-->
+<div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title" id="forecast5Date"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="forecast5Icon"></h6>
+    <ul id="forecast5Stats">
+        <li id="f5Temp"></li>
+        <li id="f5Windspeed"></li>
+        <li id="f5Humidity"></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
